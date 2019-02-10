@@ -1,0 +1,23 @@
+{
+  "name": "apibuildtool",
+  "version": "1.0.0",
+  "description": "爬取接口数据,并在本地创建对应的接口补全文件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fangkyi03/apiGeneration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fangkyi03/apiGeneration/issues"
+  },
+  "homepage": "https://github.com/fangkyi03/apiGeneration#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "fs": "0.0.1-security"
+  }
+}
