@@ -58,7 +58,7 @@ export default class Index extends Component {
   componentDidMount () { 
     api.send(this,[
       // onCallBack onError,tranData 都不是必须项 可以根据自己的条件选择
-      api.pet('Index').addPet_POST({a:1})({
+      api.pet('目标modelName 可以不填').addPet_POST('当前接口需要传的参数 默认可不传')({
         // 单条网络请求成功回调
         // 符合成功的要求可以在app.js的onGLNetStart中自行设置符合条件
         onCallBack:({retData})=>{
