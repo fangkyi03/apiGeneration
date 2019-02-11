@@ -40,6 +40,21 @@ getInitalNetWorkData()
 
 # 使用例子
 ```javascript
+import Taro, { Component } from '@tarojs/taro'
+import { View, Text } from '@tarojs/components'
+import './index.scss'
+import api from '../../command/api';
+import { connect } from '@tarojs/redux';
+
+@connect(({Index})=>({Index}))
+export default class Index extends Component {
+
+  config = {
+    navigationBarTitleText: '首页'
+  }
+
+  componentWillMount () { }
+
   componentDidMount () { 
     api.send(this,[
       // onCallBack onError,tranData 都不是必须项 可以根据自己的条件选择
@@ -66,4 +81,19 @@ getInitalNetWorkData()
       })
     ])
   }
+
+  componentWillUnmount () { }
+
+  componentDidShow () { }
+
+  componentDidHide () { }
+
+  render () {
+    return (
+      <View className='index'>
+        <Text>Hello world!</Text>
+      </View>
+    )
+  }
+}
 ```
