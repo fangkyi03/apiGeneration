@@ -56,6 +56,7 @@ export default class Index extends Component {
   componentWillMount () { }
 
   componentDidMount () { 
+    //开始进行网络请求
     api.send(this,[
       // onCallBack onError,tranData 都不是必须项 可以根据自己的条件选择
       api.pet('目标modelName 可以不填').addPet_POST('当前接口需要传的参数 默认可不传')({
